@@ -1,0 +1,27 @@
+the process is very similar in every application
+
+01)validate data contained in the request = pipe
+02)make sure the author is authenticated = guard
+03)route the request to a particular function = controller
+04)run some business logic = service
+05)access a DB = repository
+
+parts of nest
+-----------------------------------------------
+
+01)controller = handles incoming request
+02)services = handles data access and business logic
+03)modules = groups together code
+04)pipes = validates incoming data
+05)filters = handles errors that occur during request handling
+06)guards = handles authentication
+07)interceptors = ads extra logic to incoming request or outgoing responses
+08)repository = handles data stores ina DB
+
+validating request data with pipes
+----------------------------------------------------
+
+01)@Param('id') = for /:id
+02)@Query()
+03)@Headers = host -> localhost:3000/  content-type:application/json
+04)@Body
