@@ -25,3 +25,11 @@ validating request data with pipes
 02)@Query()
 03)@Headers = host -> localhost:3000/  content-type:application/json
 04)@Body
+
+setting up automatic validation
+---------------------------------------------------
+
+01)tell nest to use global validation
+02)create a class that describes the different properties that the request body should have
+03)add validation rules to the class
+04)apply that class to the request header
