@@ -3,10 +3,7 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class StudentsService {
-  studentRepository: any;
-  constructor() {
-    this.studentRepository = new StudentReposioty();
-  }
+  constructor(private studentRepository: StudentReposioty) {}
 
   getStudentById(id: string) {
     return this.studentRepository.findOne(id);

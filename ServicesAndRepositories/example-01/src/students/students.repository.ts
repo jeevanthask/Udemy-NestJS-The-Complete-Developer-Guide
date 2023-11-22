@@ -1,6 +1,8 @@
+import { Injectable } from '@nestjs/common';
 const jsonfile = require('jsonfile');
 const file = 'students.json';
 
+@Injectable()
 export class StudentReposioty {
   findOne(id: string) {
     return 'finding one student ' + id;
